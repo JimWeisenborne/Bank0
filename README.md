@@ -43,7 +43,7 @@ Execute in command line `sh exec.sh` to run the Docker in Linux, or `.\exec.ps1`
 8) Implemented RBAC for better access control (using Bank0 created API)
       Managers access includes ability to create, delete, read, and update both users and rules in the application
       Employee access includes ability read both users and rules in application.
-9) Enabled Multifactor Authorization using Push via Auth0 Gardian app.
+9) Enabled Multifactor Authorization using SMS Text messages.
 
 ## What is Auth0?
 
