@@ -1,6 +1,8 @@
-# 01-Login
+# Bank0 Authentication/Authorization Application
 
-## Running the Sample
+## Running the Application
+
+Download the Node.js quickstart from Auth0
 
 Install the dependencies.
 
@@ -15,7 +17,7 @@ Rename `.env.example` to `.env` and replace the values for `AUTH0_CLIENT_ID`, `A
 cp .env.example .env
 ```
 
-Run the app.
+Run the app. Using terminal/command line.
 
 ```bash
 npm start
@@ -30,6 +32,18 @@ In order to run the example with docker you need to have `docker` installed.
 You also need to set the environment variables as explained [previously](#running-the-sample).
 
 Execute in command line `sh exec.sh` to run the Docker in Linux, or `.\exec.ps1` to run the Docker in Windows.
+
+##  Key Application Features
+1) Ability to sign up using Auth0 DB.
+2) Users who previously signed up can authentication with username/password
+3) Customized sign-in screen to represent Bank0 branding.
+4) Users may choose to login with google or linkedin.
+5) Only users with email address that has a bank0.com domain will be allowed to login/sign up.
+7) Currently support 2 roles for users. Manager role and Employee role.
+8) Implemented RBAC for better access control (using Bank0 created API)
+      Managers access includes ability to create, delete, read, and update both users and rules in the application
+      Employee access includes ability read both users and rules in application.
+9) Enabled Multifactor Authorization using Push via Auth0 Gardian app.
 
 ## What is Auth0?
 
